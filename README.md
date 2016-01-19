@@ -48,9 +48,14 @@ When the `strict_mode` arguments is set to true, `source_array` and `order_array
 * **lòd** will throw a `Error( "NOT_EQUAL_LENGTH" )` if the `order_array` and `source_array` doesn't have equal length (**strict_mode only**).
 
 * **lòd** will throw a `Error( "INVALID_DUPLICATE_IN_ORDERS" )` if the `order_array` contains duplicate values (**strict_mode only**).
+
 ## Contributing
 
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+## Release History
+
+* **0.1.0**: Initial release (*20/01/16*)
 
 ## License
 (Un)licensed under the UNLICENSE
