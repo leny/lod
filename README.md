@@ -19,7 +19,7 @@ Install the module with: `npm install lod`.
 
 ### Signature
 
-`reordered_array = lod( source_array, order_array );`
+`reordered_array = lod( source_array, order_array[, strict_mode ] );`
 
 #### Example
 
@@ -33,12 +33,19 @@ var reordered_array = lod( source_array, [ 2, 3, 0, 1 ] ); // [ "three", "four",
 
 See [tests](./test/lod_test.js) for other examples.
 
+### Strict mode
+
+When the `strict_mode` arguments is set to true, `source_array` and `order_array` must have the same length and the `order_array` can't have duplicate values.
+
 ### Restrictions & errors
 
 * **lòd** will throw a `Error( "INVALID_ORDER_CONTENT" )` if the `order_array` contains elements that are not **Number**.
 
 * **lòd** will throw a `Error( "OUT_OF_BOUNDS_ORDER_INDEX" )` if the `order_array` contains numbers that are not inside the `source_array` range.
 
+* **lòd** will throw a `Error( "NOT_EQUAL_LENGTH" )` if the `order_array` and `source_array` doesn't have equal length (**strict_mode only**).
+
+* **lòd** will throw a `Error( "INVALID_DUPLICATE_IN_ORDERS" )` if the `order_array` contains duplicate values (**strict_mode only**).
 ## Contributing
 
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
