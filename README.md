@@ -1,5 +1,7 @@
 # lòd
 
+[![NPM version](http://img.shields.io/npm/v/lod.svg)](https://www.npmjs.com/package/lod) [![Build Status](http://img.shields.io/travis/leny/lod.svg)](https://travis-ci.org/leny/lod) ![Dependency Status](https://david-dm.org/leny/lod.svg) ![Downloads counter](http://img.shields.io/npm/dm/lod.svg)
+
 > Change the order of an array
 
 * * *
